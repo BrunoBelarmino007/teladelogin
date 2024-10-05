@@ -22,8 +22,15 @@ const Login = () => {
               <Button variant="primary" type="submit" className="mt-3" disabled>
                 Entrar
               </Button>
-              
-              
+              <div className="mt-3">
+                <a href="./telaprincipal/telaprincipal.component.html" className="text-decoration-none">
+                  Esqueceu a senha?
+                </a>
+              </div>
+              <hr className="mt-4" />
+              <Button variant="success" type="button" className="mt-3">
+                Criar nova conta
+              </Button>
             </Form>
           </Col>
         </Row>
