@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Login = () => {
@@ -12,6 +12,19 @@ const Login = () => {
             <p>O PET Plus auxilia na administração e organização do seu petshop de maneira moderna e aprimorada.</p>
           </Col>
           <Col md={6}>
+            <Form className="login-form">
+              <Form.Group controlId="formBasicEmail">
+                <Form.Control type="text" placeholder="Email ou telefone" />
+              </Form.Group>
+              <Form.Group controlId="formBasicPassword" className="mt-3">
+                <Form.Control type="password" placeholder="Senha" />
+              </Form.Group>
+              <Button variant="primary" type="submit" className="mt-3" disabled>
+                Entrar
+              </Button>
+              
+              
+            </Form>
           </Col>
         </Row>
       </Container>
